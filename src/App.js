@@ -7,19 +7,19 @@ function App() {
 
 	const GenerateQRCode = () => {
 	const guestpass=process.env.GUESTPASS;
-		url = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;"
-		QRCode.toDataURL(url, {
+		url1 = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;"
+		QRCode.toDataURL(url1, {
 			width: 800,
 			margin: 2,
 			color: {
 				dark: '#335383FF',
 				light: '#EEEEEEFF'
 			}
-		}, (err, url) => {
+		}, (err, url1) => {
 			if (err) return console.error(err)
 
-			console.log(url)
-			setQr(url)
+			console.log(url1)
+			setQr(url1)
 		})
 	}
 
