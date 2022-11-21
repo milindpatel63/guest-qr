@@ -5,7 +5,8 @@ function App() {
 	const [url, setUrl] = useState('')
 	const [qr, setQr] = useState('')
 
-	//const GenerateQRCode = () => {
+	const GenerateQRCode = () => {
+	}
 		setUrl("WIFI:S:Diana Network Guest1;T:WPA2;P:${{ secrets.GUESTPASS }};;")
 		QRCode.toDataURL(url, {
 			width: 800,
