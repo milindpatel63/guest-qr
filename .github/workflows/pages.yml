@@ -34,6 +34,8 @@
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build React
           run: npm run build --if-present
+          env:
+            GUESTPASS: ${{ secrets.GUESTPASS }}
 
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v1
@@ -50,5 +52,5 @@
           - name: Deploy to GitHub Pages
             id: deployment
             uses: actions/deploy-pages@v1
-            with:
+            env:
               GUESTPASS: ${{ secrets.GUESTPASS }}
