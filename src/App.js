@@ -6,7 +6,6 @@ function App() {
 	const [qr, setQr] = useState('')
 
 	const GenerateQRCode = () => {
-	}
 	const guestpass=process.env.GUESTPASS;
 		setUrl("WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;")
 		QRCode.toDataURL(url, {
@@ -22,7 +21,7 @@ function App() {
 			console.log(url)
 			setQr(url)
 		})
-	//}
+	}
 
 	return (
 		<div className="app">
