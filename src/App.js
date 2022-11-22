@@ -6,7 +6,7 @@ function App() {
 	const [qr, setQr] = useState('')
 
 	const GenerateQRCode = () => {
-	const guestpass=process.env.GUESTPASS;
+	const guestpass=process.env.REACT_APP_GUESTPASS;
 	console.log("GPASS: "+guestpass)
 		const url1 = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;"
 		QRCode.toDataURL(url1, {
