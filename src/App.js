@@ -1,6 +1,6 @@
 import QRCode from 'qrcode'
 import { useState,useEffect } from 'react'
-//import './App.css'
+import './App.css'
 import gpass from './guest.js'
 function App() {
 	const [qr, setQr] = useState('')
