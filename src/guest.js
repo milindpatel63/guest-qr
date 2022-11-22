@@ -1,2 +1,2 @@
-const gpass = 'value1234';
+const gpass = 'hello3456';
 export default gpass;
