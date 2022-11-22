@@ -29,10 +29,6 @@
         - name: Install dependencies
           run: npm ci
 
-        #- name: Store variables
-        #  run: |
-        #    echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
-
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build React
           run: npm run build --if-present
@@ -54,5 +50,5 @@
           - name: Deploy to GitHub Pages
             id: deployment
             uses: actions/deploy-pages@v1
-            env:
-              REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
+            #env:
+            #  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
