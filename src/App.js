@@ -6,8 +6,7 @@ function App() {
 	const [qr, setQr] = useState('')
 
 	useEffect(() => {
-	console.log("GPASS1: "+gpass)
-	const url = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+gpass+";;"
+	const url = "WIFI:S:Diana Network Guest;T:WPA;P:"+gpass+";;"
 		QRCode.toDataURL(url, {
 			width: 800,
 			margin: 2,
@@ -17,8 +16,6 @@ function App() {
 			}
 		}, (err, url) => {
 			if (err) return console.error(err)
-
-			console.log(url)
 			setQr(url)
 		})
 	},[]);

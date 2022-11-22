@@ -1,17 +1,3 @@
-/*
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
-
-body {
-	text-align: center;
-	background-color: #FFAFCC;
-	color: #335382;
-}
-*/
 img {
 	display: block;
 	width: 50%;
@@ -25,24 +11,6 @@ img {
 	font-size:28px;
 	font-weight:500;
 }
-/*
-h1 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-}
-
-input {
-	appearance: none;
-	outline: none;
-	border: none;
-	background: #EEE;
-	width: 100%;
-	max-width: 320px;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-	margin-right: 1rem;
-}
-*/
 a {
 	appearance: none;
 	outline: none;
