@@ -1,11 +1,17 @@
 import QRCode from 'qrcode'
 import { useState } from 'react'
 import './App.css'
+import raw from 'guest.txt'
 function App() {
 	const [url, setUrl] = useState('')
 	const [qr, setQr] = useState('')
 
 	const GenerateQRCode = () => {
+	fetch(raw)
+  		.then(r => r.text())
+  		.then(text => {
+    		console.log('text decoded:', text);
+  	});
 	const guestpass=process.env.REACT_APP_GUESTPASS;
 	console.log("GPASS: "+guestpass)
 		const url1 = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;"

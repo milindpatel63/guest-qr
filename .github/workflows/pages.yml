@@ -32,8 +32,8 @@
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build React
           run: npm run build --if-present
-          #env:
-          #  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
+          env:
+            REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
 
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v1
