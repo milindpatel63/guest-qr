@@ -24,13 +24,13 @@ function App() {
 	},[]);
 
 	return (
-		<div className="app">
-			<h3>Welcome to,</h3>
+		<div className="app" style='text-align:center;color:#fff;font-family:UnitRoundedOT,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:28px;font-weight:500;'>
+			<h4>Welcome to,</h4>
 			<h1>Diana Network</h1>
 			<p>SSID: <b>Diana Network Guest</b></p>
 			<p>PASSWORD: <b>{gpass}</b></p>
 			{qr && <>
-				<img alt="qr code" src={qr} />
+				<img alt="qr code" src={qr} style="width:50%" />
 				<a href={qr} download="qrcode.png">Download</a>
 			</>}
 		</div>
