@@ -12,8 +12,6 @@
       contents: read
       pages: write
       id-token: write
-    #env:
-    #  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
     jobs:
       build:
         runs-on: ubuntu-latest
@@ -31,9 +29,9 @@
         - name: Install dependencies
           run: npm ci
 
-        - name: Store variables
-          run: |
-            echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
+        #- name: Store variables
+        #  run: |
+        #    echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
 
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build React
