@@ -19,8 +19,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
-#env:
-#  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -31,9 +29,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      #- name: Store variables
-        #run: |
-        #  echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
@@ -44,5 +39,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        #env:
-        #  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}

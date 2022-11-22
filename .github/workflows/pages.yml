@@ -12,8 +12,8 @@
       contents: read
       pages: write
       id-token: write
-    env:
-      REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
+    #env:
+    #  REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
     jobs:
       build:
         runs-on: ubuntu-latest
