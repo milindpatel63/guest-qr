@@ -24,7 +24,7 @@ function App() {
 	},[]);
 
 	return (
-		<div className="app" style='text-align:center;color:#fff;font-family:UnitRoundedOT,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:28px;font-weight:500;'>
+		<div className="app">
 			<h4>Welcome to,</h4>
 			<h1>Diana Network</h1>
 			<p>SSID: <b>Diana Network Guest</b></p>
