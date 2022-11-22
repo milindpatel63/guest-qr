@@ -7,10 +7,8 @@ function App() {
 	const [qr, setQr] = useState('')
 
 	const GenerateQRCode = () => {
-		console.log("GPASS1: "+gpass)
-	const guestpass=process.env.REACT_APP_GUESTPASS;
-	console.log("GPASS: "+guestpass)
-		const url1 = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+guestpass+";;"
+	console.log("GPASS1: "+gpass)
+	const url1 = "WIFI:S:Diana Network Guest1;T:WPA2;P:"+gpass+";;"
 		QRCode.toDataURL(url1, {
 			width: 800,
 			margin: 2,
@@ -34,7 +32,7 @@ function App() {
 				placeholder="e.g. https://google.com"
 				value={url}
 				onChange={e => setUrl(e.target.value)} />
-			<button onClick={GenerateQRCode}>Generate</button>
+			<button onload={GenerateQRCode}>Generate</button>
 			{qr && <>
 				<img alt="qr code" src={qr} />
 				<a href={qr} download="qrcode.png">Download</a>
