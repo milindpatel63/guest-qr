@@ -31,7 +31,9 @@ function App() {
 			<p>PASSWORD: <b>{gpass}</b></p>
 			{qr && <>
 				<img alt="qr code" src={qr} />
+				<br/>
 				<a href={qr} download="qrcode.png">Download</a>
+				<br/>
 			</>}
 		</div>
 	)
