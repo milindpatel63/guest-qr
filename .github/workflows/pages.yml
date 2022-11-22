@@ -13,7 +13,7 @@
       pages: write
       id-token: write
     env:
-      GUESTPASS: ${{ secrets.GUESTPASS }}
+      REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
     jobs:
       build:
         runs-on: ubuntu-latest
@@ -33,13 +33,13 @@
 
         - name: Store variables
           run: |
-            echo "GUESTPASS=${{ secrets.GUESTPASS }}"
+            echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
 
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build React
           run: npm run build --if-present
           env:
-            GUESTPASS: ${{ secrets.GUESTPASS }}
+            REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
 
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v1
@@ -57,4 +57,4 @@
             id: deployment
             uses: actions/deploy-pages@v1
             env:
-              GUESTPASS: ${{ secrets.GUESTPASS }}
+              REACT_APP_GUESTPASS: ${{ secrets.GUESTPASS }}
