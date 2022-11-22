@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Store variables
+      #- name: Store variables
         #run: |
         #  echo "REACT_APP_GUESTPASS=${{ secrets.GUESTPASS }}"
       - name: Setup Pages
