@@ -30,7 +30,7 @@ function App() {
 			<p>SSID: <b>Diana Network Guest</b></p>
 			<p>PASSWORD: <b>{gpass}</b></p>
 			{qr && <>
-				<img alt="qr code" src={qr} style="width:50%" />
+				<img alt="qr code" src={qr} />
 				<a href={qr} download="qrcode.png">Download</a>
 			</>}
 		</div>
