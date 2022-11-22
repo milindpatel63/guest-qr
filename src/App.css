@@ -13,6 +13,7 @@ body {
 }
 */
 img {
+	display: block;
 	width: 50%;
 }
 
@@ -40,8 +41,8 @@ input {
 	border-radius: 0.5rem;
 	margin-right: 1rem;
 }
-
-button, a {
+*/
+a {
 	appearance: none;
 	outline: none;
 	border: none;
@@ -52,4 +53,3 @@ button, a {
 	font-size: 1.5rem;
 	text-decoration: none;
 }
-*/
