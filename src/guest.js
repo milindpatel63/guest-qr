@@ -1,2 +1,1 @@
-const gpass = '${password}';
-export default gpass;
+const gpass = 'M8WmZ5nCtgzR';\nexport default gpass;
