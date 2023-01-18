@@ -1,1 +1,1 @@
-const gpass = 'vnHAGhj7Ltqv'; export default gpass;
+$const gpass = 'ABfyJ28Twl_X';\nexport default gpass;
