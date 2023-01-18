@@ -1,1 +1,2 @@
-$const gpass = 'ABfyJ28Twl_X';\nexport default gpass;
+const gpass = "${password}";
+export default gpass;
