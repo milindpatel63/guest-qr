@@ -1,2 +1,2 @@
-const gpass = "${password}";
+const gpass = '${password}';
 export default gpass;
