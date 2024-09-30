@@ -1,2 +1,2 @@
-const gpass = 'NvFj6JgSm_RQ';
+const gpass = 'LaRxljwjWGdH';
 export default gpass;
